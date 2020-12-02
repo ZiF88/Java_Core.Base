@@ -23,19 +23,13 @@ public class guess_the_number {
             if (userAnswer1 == answer) {
                 System.out.println("Поздравляем, вы угадали!");
                 break;
-            } else if (userAnswer1 < answer) {
-                System.out.println("Вы ввели число меньше загаданного, попробуйте еще раз");
             } else {
-                System.out.println("Вы ввели число больше загаданного, попробуйте еще раз");
+                System.out.printf("Вы ввели число " + (userAnswer1 < answer ? "%s" : "%s")
+                        +" загаданного, попробуйте еще раз \n", "больше", "меньше");
             }
         }
-        int userAnswer2 = getUserAnswer2(1, 0);
-        if (userAnswer2 == 1) {
-            guessNumGame();
-        } else {
-            System.out.println("Игра окончена!");
-        }
 
+        repeat();
     }
 
     private static int getRandomNum(int num) {
@@ -47,10 +41,19 @@ public class guess_the_number {
         Scanner sc = new Scanner(System.in);
         int x;
         do {
-            System.out.printf("Введите число от %x до %x\n", min, max);
+            System.out.printf("Угадайте число от %x до %x\n", min, max);
             x = sc.nextInt();
         } while (x < min || x > max);
         return x;
+    }
+
+    private static void repeat() {
+        int userAnswer2 = getUserAnswer2(1, 0);
+        if (userAnswer2 == 1) {
+            guessNumGame();
+        } else {
+            System.out.println("Игра окончена!");
+        }
     }
 
     private static int getUserAnswer2(int cont, int exit) {
