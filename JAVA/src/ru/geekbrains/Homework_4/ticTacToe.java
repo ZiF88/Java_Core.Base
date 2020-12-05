@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ticTacToe {
 
-
+ 
     static final int SIZE = 5;
 
     static final char DOT_EMPTY = '•';
