@@ -48,7 +48,7 @@ public class guess_the_word {
                     if (i <= userAnswer.length() - 1 && i <= mainWord.length() - 1) {
 
                         if (userAnswer.charAt(i) == mainWord.charAt(i)) {
-                            
+
                             outputAnswer += mainWord.charAt(i);
 
                         } else {

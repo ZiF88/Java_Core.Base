@@ -1,4 +1,4 @@
-package ru.geekbrains.homework_2;
+package ru.geekbrains.Homework_2;
 
 import java.util.Arrays;
 
@@ -7,17 +7,17 @@ public class Main {
     public static void main(String[] args) {
 
 //        firstTask();
-        
+
 //        secondTask();
-        
+
 //        thirdTask();
-        
+
 //        fourthTask();
-        
+
 //        fifthTask();
 
 //        sixthTask();
-        
+
 //        seventhTask(); // к сожалению, не разобрался как можно смещать данные и последний записывать в первый.
 //        Получилось только искуственно. Задачу хочу сдать до начала следующего урока, чтобы не было соблазна подсмотреть решение.
     }
